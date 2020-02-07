@@ -1,0 +1,43 @@
+{
+
+    "name": "lib-cn_simmanager",
+
+    "sencha": {
+        "namespace": "coon.simmanager",
+        "coon-js" : {
+            "package" : {
+                "controller" : true
+            }
+        },
+        "type": "code",
+        "creator": "coon.js",
+        "summary": "Sencha ExtJS Dev Package for Simlet behavior.",
+        "detailedDescription": "",
+        "version": "1.0.0",
+        "compatVersion": "1.0.0",
+        "format": "1",
+        "slicer": null,
+        "fashion" : null,
+        "output": {
+            "base"   : "${package.dir}/build",
+            "js": {
+                "version": "ES6"
+            }
+        },
+        "compressor": {
+            "polyfills": "none"
+        },
+        "local": true,
+        "sass" : null,
+        "classpath": [
+            "${package.dir}/src"
+        ],
+        "overrides": null,
+        "example": null,
+        "framework": "ext",
+        "requires": [
+            "lib-cn_core",
+            "ux"
+        ]
+    }
+}
