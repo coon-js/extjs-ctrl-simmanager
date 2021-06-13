@@ -1,3 +1,3 @@
-# lib-cn_simmanager/licenses
+# extjs-app-simmanager/licenses
 
 This folder contains the supported licenses for third-party use.

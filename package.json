@@ -1,43 +1,88 @@
 {
+  "name": "@coon-js/axtjs-app-simmanager",
+  "sencha": {
+    "namespace": "coon.simmanager",
+    "coon-js": {
+      "package": {
+        "controller": true
+      }
+    },
+    "type": "code",
+    "creator": "coon.js",
+    "summary": "NPM package providing application package for utilizing Simlets in Sencha ExtJS applications.",
+    "detailedDescription": "",
+    "version": "0.0.1",
+    "compatVersion": "0.0.1",
+    "format": "1",
+    "slicer": null,
+    "fashion": null,
+    "output": {
+      "base": "${package.dir}/build",
+      "js": {
+        "version": "ES6"
+      }
+    },
+    "compressor": {
+      "polyfills": "none"
+    },
+    "local": true,
+    "sass": null,
+    "classpath": [
+      "${package.dir}/src"
+    ],
+    "overrides": null,
+    "example": null,
+    "framework": "ext",
+    "requires": [
+      "extjs-lib-core",
+      "ux"
+    ]
+  },
+  "description": "NPM package providing application package for utilizing Simlets in Sencha ExtJS applications.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+      "test": "npx ws --port 8064 --static.index tests.html --open",
+      "postinstall" : "npx extjs-link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coon-js/extjs-app-simmanager.git"
+  },
+  "keywords": [
+    "simmanagaer",
+    "simlet",
+    "extjs",
+    "sencha",
 
-    "name": "lib-cn_simmanager",
-
-    "sencha": {
-        "namespace": "coon.simmanager",
-        "coon-js" : {
-            "package" : {
-                "controller" : true
-            }
-        },
-        "type": "code",
-        "creator": "coon.js",
-        "summary": "Sencha ExtJS Dev Package for Simlet behavior.",
-        "detailedDescription": "",
-        "version": "1.0.0",
-        "compatVersion": "1.0.0",
-        "format": "1",
-        "slicer": null,
-        "fashion" : null,
-        "output": {
-            "base"   : "${package.dir}/build",
-            "js": {
-                "version": "ES6"
-            }
-        },
-        "compressor": {
-            "polyfills": "none"
-        },
-        "local": true,
-        "sass" : null,
-        "classpath": [
-            "${package.dir}/src"
-        ],
-        "overrides": null,
-        "example": null,
-        "framework": "ext",
-        "requires": [
-            "lib-cn_core",
-            "ux"
-        ]
-    }
+    "coon.js",
+    "coon",
+    "coon-js",
+    "l8.js",
+    "l8",
+    "javascript",
+    "conjoon",
+    "dev",
+    "environment",
+    "mock",
+    "requests"
+  ],
+  "author": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coon-js/extjs-app-simmanager/issues"
+  },
+  "homepage": "https://github.com/coon-js/extjs-app-simmanager#readme",
+  "devDependencies": {
+    "@coon-js/extjs-lib-core": "file:../extjs-lib-core",
+    "@coon-js/extjs-link": "file:../extjs-link",
+    "@coon-js/extjs-package-loader": "^1.0.0",
+    "@coon-js/siesta-lib-helper": "file:../siesta-lib-helper",
+    "@l8js/l8": "file:../../@l8js/l8",
+    "local-web-server": "^4.2.1",
+    "siesta-lite": "^5.5.2"
+  }
 }

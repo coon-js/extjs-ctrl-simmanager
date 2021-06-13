@@ -1,43 +1,56 @@
-# lib-cn_simmanager
-This **Sencha ExtJS** package provides functionality to initialize the Ext.ux.ajax.SimManager 
+# @coon-js/extjs-app-simmanager
+NPM package providing functionality for Sencha ExtJS applications to properly initialize  `Ext.ux.ajax.SimManager` 
 with a `null` `defaultSimlet` so that requests not intercepted by orther simlets still trigger regular
 XMLHttpRequests. This package should be used whenever specific packages for intercepting 
 requests are used in projects.
 
-## Naming
-The following naming conventions apply:
+## Installation
+```
+npm install --save-dev @coon-js/extjs-lib-core
+```
 
-#### Namespace
-`coon.simmanager.*`
-#### Package name
-`lib-cn_simmanager`
-#### Shorthand to be used with providing aliases
-`cn_simmanager`
+## Usage
+### Requirements
+This package requires the [extjs-lib-core](https://github.com/coon-js/extjs-lib-core) package of the [coon.js](https://github.com/coon-js) project.
 
-## Tests
-Tests are written with [Siesta](https://bryntum.com/siesta)
-
-# Usage
-## Requirements
-This package requires the [lib-cn_core](https://github.com/coon-js/lib-cn_core) package of the [coon.js](https://github.com/coon-js) project.
-
-### Installation
+### ExtJS Installation
 Simply update the app.json of your application by specifying this package in the `uses`-property in either the `development` and/or `prodution` section:
 
 *Example:*
 ````javascript
 "development": {
         "uses" : [
-            "lib-cn_simmanager"
+            "extjs-app-simmanager"
         ]
 },
 "production": {
         "uses" : [
-            "lib-cn_simmanager"
+            "extjs-app-simmanager"
         ]
 }
 ````
 
-When the `init()`-method of the `PackageController` of thi package gets called, the `defaultSimlet` of `Ext.ux.ajax.SimManager` will 
+When the `init()`-method of the `PackageController` of thi package gets called, the `defaultSimlet` of `Ext.ux.ajax.SimManager` will
 automatically get set to `null`.
 
+
+
+## Post-Install
+[@coon-js/extjs-link](https://npmjs.org/coon-js/extjs-link) will start once the package was installed and guide you
+through the process of creating symlinks to an existing ExtJS sdk installation.
+This is only required if you want to run the tests (`./tests`), as [Siesta](https//npmjs.org/siesta-lite) relies on
+an existing ExtJS installation.
+
+## Dev
+### Naming
+The following naming conventions apply:
+
+#### Namespace
+`coon.simmanager.*`
+#### Package name
+`extjs-app-simmanager`
+#### Shorthand to be used with providing aliases
+`cn_simmanager`
+
+## Tests
+Tests are written with [Siesta](https://bryntum.com/siesta)

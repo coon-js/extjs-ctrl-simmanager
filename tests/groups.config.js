@@ -1,7 +1,7 @@
 /**
  * coon.js
- * lib-cn_simmanager
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/coon-js/lib-cn_simmanager
+ * extjs-app-simmanager
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/coon-js/extjs-app-simmanager
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,19 +23,12 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
-const coon = window.coon || {};
-coon.tests = coon.tests || {};
-coon.tests.config = coon.tests.config || {};
-
-
-coon.tests.config.paths = {
-    extjs : {
-        js : {
-            url : "[PATH_TO_EXT_ALL.JS]" /*Your path to your ExtJS distribution for the classic (or modern) toolkit (e.g. ext-all-debug.js) */
-        },
-        css : {
-            url : "[PATH_TO_EXT_THEME.JS]" /*Your path to an ExtJS theme, preferably Triton Theme (classic toolkit) */
-        }
-    }
-}
+export default [{
+    group : 'universal',
+    items : [{
+        group : 'app',
+        items : [
+            'src/app/PackageControllerTest.js'
+        ]
+    }]
+}];

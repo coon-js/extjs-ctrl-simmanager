@@ -1,7 +1,7 @@
 /**
  * coon.js
- * lib-cn_simmanager
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/coon-js/lib-cn_simmanager
+ * extjs-app-simmanager
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/coon-js/extjs-app-simmanager
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -24,7 +24,7 @@
  */
 
 /**
- * PackageController for the lib-cn_simmanager package.
+ * PackageController for the extjs-app-simmanager package.
  * Initializes the SimManager with a null-simlet so that urls for which no simlets
  * exists still work via regular Requests.
  */
