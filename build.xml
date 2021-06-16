@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="extjs-app-simmanager" default=".help">
+<project name="extjs-ctrl-simmanager" default=".help">
 
     <script language="javascript">
         <![CDATA[

@@ -1,5 +1,5 @@
 {
-  "name": "@coon-js/axtjs-app-simmanager",
+  "name": "@coon-js/extjs-ctrl-simmanager",
   "sencha": {
     "namespace": "coon.simmanager",
     "coon-js": {
@@ -11,8 +11,8 @@
     "creator": "coon.js",
     "summary": "NPM package providing application package for utilizing Simlets in Sencha ExtJS applications.",
     "detailedDescription": "",
-    "version": "0.0.1",
-    "compatVersion": "0.0.1",
+    "version": "0.0.2",
+    "compatVersion": "0.0.2",
     "format": "1",
     "slicer": null,
     "fashion": null,
@@ -39,25 +39,25 @@
     ]
   },
   "description": "NPM package providing application package for utilizing Simlets in Sencha ExtJS applications.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-      "test": "npx ws --port 8064 --static.index tests.html --open",
-      "postinstall" : "npx extjs-link"
+    "test": "npx ws --port 8063 --static.index tests.redirect.html --open",
+    "postinstall": "npm run setup:tests",
+    "setup:tests": "npx extjs-link && siesta-lib-helper"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coon-js/extjs-app-simmanager.git"
+    "url": "git+https://github.com/coon-js/extjs-ctrl-simmanager.git"
   },
   "keywords": [
     "simmanagaer",
     "simlet",
     "extjs",
     "sencha",
-
     "coon.js",
     "coon",
     "coon-js",
@@ -73,9 +73,9 @@
   "author": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coon-js/extjs-app-simmanager/issues"
+    "url": "https://github.com/coon-js/extjs-ctrl-simmanager/issues"
   },
-  "homepage": "https://github.com/coon-js/extjs-app-simmanager#readme",
+  "homepage": "https://github.com/coon-js/extjs-ctrl-simmanager#readme",
   "devDependencies": {
     "@coon-js/extjs-lib-core": "file:../extjs-lib-core",
     "@coon-js/extjs-link": "file:../extjs-link",

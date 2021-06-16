@@ -1,8 +1,7 @@
-<!--
 /**
  * coon.js
- * extjs-app-simmanager
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/coon-js/extjs-app-simmanager
+ * extjs-ctrl-simmanager
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/coon-js/extjs-ctrl-simmanager
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,15 +22,25 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
--->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="refresh" content="0;url=/tests/index.html" />
-    <title>Page Moved</title>
-</head>
-<body>
-<a href="/tests">here!</a>
-</body>
-</html>
+/**
+ *
+ */
+export default {
+
+    name: "extjs-ctrl-simmanager",
+
+    timeout: 750,
+
+    loaderPath: {
+
+        'coon.simmanager.app' : '../src/app',
+
+        "coon.core": "../node_modules/@coon-js/extjs-lib-core/src"
+    },
+    preload: {
+        js: "../node_modules/@l8js/l8/dist/l8.runtime.umd.js"
+    }
+};
+
+
