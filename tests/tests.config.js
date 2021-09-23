@@ -34,7 +34,7 @@ export default {
 
     loaderPath: {
 
-        'coon.simmanager.app' : '../src/app',
+        "coon.simmanager.app": "../src/app",
 
         "coon.core": "../node_modules/@coon-js/extjs-lib-core/src"
     },

@@ -23,24 +23,24 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-describe('coon.simmanager.app.PackageControllerTest', function(t) {
+describe("coon.simmanager.app.PackageControllerTest", function (t) {
 
 
-t.requireOk("Ext.ux.ajax.SimManager", function() {
+    t.requireOk("Ext.ux.ajax.SimManager", function () {
 
 
-    t.it("Should create the Controller", function(t) {
+        t.it("Should create the Controller", function (t) {
 
-        t.expect(Ext.ux.ajax.SimManager.defaultSimlet).toBeUndefined();
+            t.expect(Ext.ux.ajax.SimManager.defaultSimlet).toBeUndefined();
 
-        let ctrl = Ext.create('coon.simmanager.app.PackageController');
+            let ctrl = Ext.create("coon.simmanager.app.PackageController");
 
-        ctrl.init();
+            ctrl.init();
 
-        t.expect(Ext.ux.ajax.SimManager.defaultSimlet).toBe(null);
-
-
-    });
+            t.expect(Ext.ux.ajax.SimManager.defaultSimlet).toBe(null);
 
 
-});});
+        });
+
+
+    });});

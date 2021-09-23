@@ -24,11 +24,11 @@
  */
 
 export default [{
-    group : 'universal',
-    items : [{
-        group : 'app',
-        items : [
-            'src/app/PackageControllerTest.js'
+    group: "universal",
+    items: [{
+        group: "app",
+        items: [
+            "src/app/PackageControllerTest.js"
         ]
     }]
 }];

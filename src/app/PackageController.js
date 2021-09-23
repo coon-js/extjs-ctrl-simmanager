@@ -28,16 +28,16 @@
  * Initializes the SimManager with a null-simlet so that urls for which no simlets
  * exists still work via regular Requests.
  */
-Ext.define('coon.simmanager.app.PackageController', {
+Ext.define("coon.simmanager.app.PackageController", {
 
-    extend : 'coon.core.app.PackageController',
+    extend: "coon.core.app.PackageController",
 
-    requires : [
+    requires: [
         "Ext.ux.ajax.SimManager"
     ],
 
 
-    init : function(app) {
+    init: function (app) {
 
         Ext.ux.ajax.SimManager.defaultSimlet = null;
 
