@@ -40,7 +40,7 @@
     ]
   },
   "description": "NPM package providing application package for utilizing Simlets in Sencha ExtJS applications.",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "main": "index.js",
   "directories": {
     "test": "tests"
