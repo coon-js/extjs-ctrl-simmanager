@@ -9,11 +9,16 @@ requests are used in projects.
 npm install --save-dev @coon-js/extjs-ctrl-simmanager
 ```
 
-### Post-Install
-[@coon-js/extjs-link](https://npmjs.org/coon-js/extjs-link) will start once the package was installed and guide you
-through the process of creating symlinks to an existing ExtJS sdk installation.
-This is only required if you want to run the tests (`./tests`), as [Siesta](https//npmjs.org/siesta-lite) relies on
-an existing ExtJS installation.
+If you want to develop with `extjs-ctrl-simmanager`, run the `build:dev`-script afterwards:
+```bash
+npm run build:dev
+```
+Testing environment will then be available via
+
+```bash
+npm test
+```
+
 
 ## Usage
 ### ExtJS Installation
