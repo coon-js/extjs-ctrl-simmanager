@@ -25,20 +25,22 @@ npm test
 Simply update the app.json of your application by specifying this package in the `uses`-property in either the `development` and/or `prodution` section:
 
 *Example:*
-````javascript
-"development": {
-        "uses" : [
+````json
+{
+    "development": {
+        "uses": [
             "extjs-ctrl-simmanager"
         ]
-},
-"production": {
-        "uses" : [
+    },
+    "production": {
+        "uses": [
             "extjs-ctrl-simmanager"
         ]
+    }
 }
 ````
 
-When the `init()`-method of the `PackageController` of thi package gets called, the `defaultSimlet` of `Ext.ux.ajax.SimManager` will
+When the `init()`-method of the `PackageController` of this package gets called, the `defaultSimlet` of `Ext.ux.ajax.SimManager` will
 automatically get set to `null`.
 
 
