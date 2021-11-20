@@ -5,7 +5,9 @@
     "namespace": "coon.simmanager",
     "coon-js": {
       "package": {
-        "controller": true
+        "autoLoad": {
+          "registerController": true
+        }
       }
     },
     "type": "code",
