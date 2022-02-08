@@ -88,7 +88,8 @@
   "dependencies": {
     "@coon-js/extjs-lib-core": ">=0.6.0",
     "@coon-js/extjs-package-loader": ">=0.1.0",
-    "@l8js/l8": ">=0.4.2"
+    "@l8js/l8": ">=0.4.2",
+    "@sencha/ext-ux": "^7.4.0"
   },
   "devDependencies": {
     "@coon-js/extjs-link": ">=0.1.4",
