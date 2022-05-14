@@ -1,7 +1,7 @@
 # @coon-js/extjs-ctrl-simmanager ![MIT](https://img.shields.io/npm/l/@coon-js/extjs-ctrl-simmanager) [![npm version](https://badge.fury.io/js/@coon-js%2Fextjs-ctrl-simmanager.svg)](https://badge.fury.io/js/@coon-js%2Fextjs-ctrl-simmanager)
 
-NPM package providing functionality for Sencha ExtJS applications to properly initialize  `Ext.ux.ajax.SimManager` 
-with a `null` `defaultSimlet` so that requests not intercepted by orther simlets still trigger regular
+NPM package providing functionality for Sencha Ext JS applications to properly initialize  `Ext.ux.ajax.SimManager` 
+with a `null` `defaultSimlet` so that requests not intercepted by other simlets still trigger regular
 XMLHttpRequests. This package should be used whenever specific packages for intercepting 
 requests are used in projects.
 
@@ -22,9 +22,9 @@ $ npm test
 
 For using the package as an external dependency in an application, use
 ```bash
-$ npm install --save-prod @coon-js/extjs-ctrl-simmanager
+$ npm i @coon-js/extjs-ctrl-simmanager
 ```
-In your `app.json`, add this package as a requirement, and make sure your ExtJS `workspace.json`
+In your `app.json`, add this package as a requirement, and make sure your   `workspace.json`
 is properly configured to look up local repositories in the `node_modules`-directory.
 
 Example (`workspace.json`) :
@@ -38,7 +38,7 @@ Example (`workspace.json`) :
 ```
 
 ## Usage
-### ExtJS Installation
+### Ext JS Installation
 Simply update the app.json of your application by specifying this package in the `uses`-property in either the `development` and/or `prodution` section:
 
 *Example:*
@@ -73,4 +73,4 @@ The following naming conventions apply:
 `cn_simmanager`
 
 ## Tests
-Tests are written with [Siesta](https://bryntum.com/siesta)
+Tests are written with [Siesta](https://bryntum.com/siesta). Documentation can be found [here](./tests/README.md).
